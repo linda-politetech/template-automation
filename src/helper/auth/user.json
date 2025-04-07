@@ -1,0 +1,33 @@
+{
+  "cookies": [
+    {
+      "name": "ARRAffinity",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0NTQ2NzRmLWQ1ZWYtNGE3ZS1hMDA4LWNmMzU0MzZlYWUwMCIsImVtYWlsIjoibGluZGFAcG9saXRldGVjaC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDM3NTg4MzAsImV4cCI6MTc0NTQ4NjgzMH0.gpxIKKB4MgJtqoadCadxN_f1oaYLPMOq8-CSL_-AcDU",
+      "domain": "qa.polite-assistant.dev.politetech.com",
+      "path": "/",
+      "expires": 1743760706,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://qa.polite-assistant.dev.politetech.com",
+      "localStorage": [
+        {
+          "name": "token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0NTQ2NzRmLWQ1ZWYtNGE3ZS1hMDA4LWNmMzU0MzZlYWUwMCIsImVtYWlsIjoibGluZGFAcG9saXRldGVjaC5jb20iLCJyb2xlIjoibWVtYmVyIiwiaWF0IjoxNzM5NTA2MzU1LCJleHAiOjE3NDEyMzQzNTV9.Eni8_51DIdu7hO964XuohKNecmQUy1lYMfofcTZniBU"
+        },
+        {
+          "name": "language",
+          "value": "en"
+        },
+        {
+          "name": "theme",
+          "value": "light"
+        }
+      ]
+    }
+  ]
+}
