@@ -18,14 +18,6 @@ export default class PlaywrightWrapper {
         await element.click();
     }
 
-    async waitAndFill(locator: string, value) {
-        const element = this.page.locator(locator);
-        await element.waitFor({
-          state: 'visible'
-        });
-        await element.fill(value);
-      }
-
     async navigateTo(link: string) {
         await Promise.all([
             this.page.waitForNavigation(),
@@ -33,6 +25,6 @@ export default class PlaywrightWrapper {
         ])
     }
 
-
+    
 
 }

@@ -1,0 +1,22 @@
+import { expect, Page } from "@playwright/test";
+import PlaywrightWrapper from "../helper/wrapper/PlaywrightWrappers";
+
+export default class LoginPage {
+  private base: PlaywrightWrapper;
+
+  constructor(private page: Page) {
+    this.base = new PlaywrightWrapper(page);
+  }
+
+  private Elements = {
+    
+  };
+
+  async navigateToPoliteAssist() {
+    await this.base.goto(process.env.BASEURL);
+  }
+
+  async getPageTitle() {
+    return this.page.title();
+  }
+}
