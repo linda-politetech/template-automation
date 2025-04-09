@@ -8,6 +8,7 @@ let assert: Assert;
 
 
 When('I click on "Continue with Microsoft account" button', async function () {
+    loginPage = new LoginPage(fixture.page);
     await loginPage.clickLoginMicrosoft();
 });
 

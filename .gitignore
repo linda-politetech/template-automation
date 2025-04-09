@@ -9,3 +9,4 @@ assets
 index.html
 .vscode/
 .DS_Store
+.history/
