@@ -10,15 +10,15 @@ export default class LoginPage {
     loginMicrosoftBtn: 
         "//p[normalize-space(text())= 'Continue with Microsoft Account']",
     emailField: 
-        "//input[@placeholder='Email, điện thoại hoặc Skype']",
+        "//input[@name='loginfmt']",
     continueBtn: 
         "//input[@data-report-event='Signin_Submit']",
     passwordField: 
-        "//input[@placeholder='Mật khẩu']",
+        "//input[@name='passwd']",
     loginBtn: 
         "//input[@id='idSIButton9']",
     yesBtn:
-        "//input[@value='Có']",
+        "//input[@id='idSIButton9']",
     successLoginMsg:
         ""
   };

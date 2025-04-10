@@ -20,7 +20,7 @@ When('User enter a valid username as {string}', async function (username) {
     await loginPage.defineEmail(username);
 });
 
-When('User click on "Continue" button', async function (string) {
+When('User click on "Continue" button', async function () {
     await loginPage.clickContinue();
 });
 
@@ -29,12 +29,12 @@ When('User enter a valid password as {string}', async function (password) {
 });
 
 
-When('User click on "Login" button', async function (string) {
+When('User click on "Login" button', async function () {
     await loginPage.clickLoginBtn();
 });
 
 
-When('User click on "Yes" button', async function (string){
+When('User click on "Yes" button', async function (){
     await loginPage.clickYesBtn();
 });
 
