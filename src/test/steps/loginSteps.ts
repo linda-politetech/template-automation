@@ -12,10 +12,6 @@ When('I click on "Continue with Microsoft account" button', async function () {
     await loginPage.clickLoginMicrosoft();
 });
 
-Then('I will be redirected to Microsoft login page', async function () {
-    
-});
-
 When('User enter a email as {string}', async function (email) {
     await loginPage.defineEmail(email);
 });

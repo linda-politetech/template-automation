@@ -4,9 +4,11 @@ import { error } from "winston";
 
 export default class LoginPage {
   private base: PlaywrightWrapper;
+
   constructor(private page: Page) {
     this.base = new PlaywrightWrapper(page);
   }
+
   private Elements = {
     loginMicrosoftBtn: "//p[normalize-space(text())= 'Continue with Microsoft Account']",
     emailField: "//input[@name='loginfmt']",
@@ -24,7 +26,7 @@ export default class LoginPage {
   };
 
   async navigateToMicrosoftLoginPage() {
-    await this.base.goto("");
+    await this.base.goto(process.env.BASEURL);
   };
 
   async defineEmail(email) {
