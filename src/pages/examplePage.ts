@@ -9,15 +9,16 @@ export default class ExamplePage {
   }
 
   private Elements = {
-    continueWithMSBtn:
-      "button[contains(text(),'Continue with Microsoft Account')]",
+    loginMsg:
+      "//h3[normalize-space(text()='Please sign in to continue accessing to the system.')]",
   };
 
   async navigateToPoliteAssist() {
     await this.base.goto(process.env.BASEURL);
   }
 
-  async getPageTitle() {
-    return this.page.title();
+  async accessSuccessfullyAsAnonymous() {
+    const loginMsg = await this.page.locator(this.Elements.loginMsg);
+    await expect(loginMsg).toBeVisible();
   }
 }

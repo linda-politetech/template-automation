@@ -12,11 +12,9 @@ Given("I open the Polite Assist website", async function () {
   await examplePage.navigateToPoliteAssist();
 });
 
-Then("the title should be {string}", async function (expectedTitle) {
-  const title = await examplePage.getPageTitle();
-  if (title !== expectedTitle) {
-    throw new Error(
-      `Expected title to be "${expectedTitle}" but got "${title}"`
-    );
+Then(
+  "I should access the website successfully as an anonymous user",
+  async function () {
+    await examplePage.accessSuccessfullyAsAnonymous();
   }
-});
+);

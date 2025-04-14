@@ -29,20 +29,20 @@ This repository contains tools and scripts for automating template generation an
 
 - Run tests in debug mode:
     ```bash
-    npm run debug
+    npm run debug:qa
     ```
 - Run tests:
     ```bash
-    npm test
+    npm run test:qa
     ```
 - Generate test reports:
     ```bash
     npm run posttest
     ```
-- Re-run failed tests:
+<!-- - Re-run failed tests:
     ```bash
     npm run test:failed
-    ```
+    ```  -->
 
 ## Contributing and practicing
 

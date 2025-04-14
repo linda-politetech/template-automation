@@ -1,0 +1,30 @@
+{
+  "cookies": [
+    {
+      "name": "token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYTgyOGRhLTg4MTEtNDA1ZS04YjRkLWRmZTk3OTBkNzUxMSIsImVtYWlsIjoibGluZGFAcG9saXRldGVjaC5jb20iLCJyb2xlIjoibWVtYmVyIiwiaWF0IjoxNzQ0MzYzMTg5LCJleHAiOjE3NDYwOTExODl9.6V8xN861-L0AwnGj-NcU5bcv5AaK_INV3kRfeJFDHp8",
+      "domain": "ai.politetech.com",
+      "path": "/",
+      "expires": 1745120399,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://ai.politetech.com",
+      "localStorage": [
+  
+        {
+          "name": "language",
+          "value": "en"
+        },
+        {
+          "name": "theme",
+          "value": "light"
+        }
+      ]
+    }
+  ]
+}

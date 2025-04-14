@@ -48,7 +48,7 @@ Before({ tags: "not @auth" }, async function ({ pickle }) {
 Before({ tags: "@auth" }, async function ({ pickle }) {
   const scenarioName = pickle.name + pickle.id;
   context = await browser.newContext({
-    storageState: getStorageState(pickle.name),
+    storageState: getStorageState(),
     recordVideo: {
       dir: "test-results/videos",
     },
@@ -91,7 +91,7 @@ AfterAll(async function () {
   await browser.close();
 });
 
-function getStorageState(user: string):
+function getStorageState():
   | string
   | {
       cookies: {
@@ -109,6 +109,10 @@ function getStorageState(user: string):
         localStorage: { name: string; value: string }[];
       }[];
     } {
-  if (user.endsWith("admin")) return "src/helper/auth/admin.json";
-  else if (user.endsWith("lead")) return "src/helper/auth/lead.json";
+  const env = process.env.ENV;
+  const storageData = JSON.parse(
+    fs.readFileSync(`src/helper/auth/user.${env}.json`, "utf8")
+  );
+
+  return storageData;
 }
