@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwYTgyOGRhLTg4MTEtNDA1ZS04YjRkLWRmZTk3OTBkNzUxMSIsImVtYWlsIjoibGluZGFAcG9saXRldGVjaC5jb20iLCJyb2xlIjoibWVtYmVyIiwiaWF0IjoxNzQ0MzYzMTg5LCJleHAiOjE3NDYwOTExODl9.6V8xN861-L0AwnGj-NcU5bcv5AaK_INV3kRfeJFDHp8",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYjliNTliLTUwZjktNDc5Yi04MzA4LWI5ZDYxMzE0OTFlNyIsImVtYWlsIjoidGhhby50cmFudGhhbmhAcG9saXRldGVjaC5jb20iLCJyb2xlIjoibWVtYmVyIiwiaWF0IjoxNzQ0NzA4ODk0LCJleHAiOjE3NDY0MzY4OTR9.LlRzrb7S9qP5alqWVMmva1MPnTI-cLK4cxfCHuYU9CE",
       "domain": "ai.politetech.com",
       "path": "/",
-      "expires": 1745120399,
+      "expires": 1745288498,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
