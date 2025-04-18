@@ -5,7 +5,8 @@ module.exports = {
             snippetInterface: "async-await"
         },
         paths: [
-            "src/test/features/createChat.feature",
+            "src/test/features/renameChat.feature",
+            // "src/test/features/chat_features/renameChat.feature",
         ],
         publishQuiet: true,
         dryRun: false,
