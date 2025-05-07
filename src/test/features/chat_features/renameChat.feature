@@ -15,4 +15,4 @@ Scenario: User renames a chat successfully
       Examples:
           | newName |
           | New Chat 1 |
-        #   | New Chat 2 |
+          | New Chat 2 |

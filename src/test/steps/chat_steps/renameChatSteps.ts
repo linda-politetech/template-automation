@@ -1,7 +1,7 @@
 import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
-import { fixture } from "../../hooks/pageFixture";
-import Assert from "../../helper/wrapper/assert";
-import RenameChatPage from "../../pages/renameChatPage";
+import { fixture } from "../../../hooks/pageFixture";
+import Assert from "../../../helper/wrapper/assert";
+import RenameChatPage from "../../../pages/chat_pages/renameChatPage";
 
 let renameChatPage: RenameChatPage;
 let assert: Assert;
@@ -10,6 +10,7 @@ setDefaultTimeout(60 * 1000 * 2);
 
 When ("User clicks on the sidebar to open the chat list", async function () {
     renameChatPage = new RenameChatPage(fixture.page);
+    assert = new Assert(fixture.page);
     await renameChatPage.openChatList();
 
 });

@@ -1,5 +1,5 @@
 import { expect, Page } from "@playwright/test";
-import PlaywrightWrapper from "../helper/wrapper/PlaywrightWrappers";
+import PlaywrightWrapper from "../../helper/wrapper/PlaywrightWrappers";
 
 export default class RenameChatPage {
     private base: PlaywrightWrapper;

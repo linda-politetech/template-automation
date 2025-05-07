@@ -1,7 +1,7 @@
 import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
-import CreateChatPage from "../../pages/createChatPage";
-import { fixture } from "../../hooks/pageFixture";
-import Assert from "../../helper/wrapper/assert";
+import CreateChatPage from "../../../pages/chat_pages/createChatPage";
+import { fixture } from "../../../hooks/pageFixture";
+import Assert from "../../../helper/wrapper/assert";
 
 let createChatPage: CreateChatPage;
 let assert: Assert;

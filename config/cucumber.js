@@ -5,13 +5,13 @@ module.exports = {
             snippetInterface: "async-await"
         },
         paths: [
-            "src/test/features/renameChat.feature",
-            // "src/test/features/chat_features/renameChat.feature",
+            // "src/test/features/renameChat.feature",
+            "src/test/features/chat_features/deleteChat.feature",
         ],
         publishQuiet: true,
         dryRun: false,
         require: [
-            "src/test/steps/*.ts",
+            "src/test/steps/**/*.ts",
             "src/hooks/hooks.ts"
         ],
         requireModule: [
