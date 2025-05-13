@@ -30,7 +30,8 @@ export default class RenameChatPage {
     }
 
     async selectChat() {
-        await this.base.waitAndClick(this.Elements.nameChat);
+        // await this.base.waitAndClick(this.Elements.nameChat);
+        await this.base.waitAndHover(this.Elements.nameChat);
     }
 
     async clickThreeDots() {

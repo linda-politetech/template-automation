@@ -41,4 +41,12 @@ export default class PlaywrightWrapper {
         await element.clear();
       }
 
+      async waitAndHover(locator: string) {
+        const element = this.page.locator(locator);
+        await element.waitFor({
+          state: 'visible'
+        });
+        await element.hover();
+      }
+
 }

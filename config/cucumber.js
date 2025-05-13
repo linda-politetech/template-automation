@@ -6,7 +6,7 @@ module.exports = {
         },
         paths: [
             // "src/test/features/renameChat.feature",
-            "src/test/features/chat_features/deleteChat.feature",
+            "src/test/features/chat_features/renameChat.feature",
         ],
         publishQuiet: true,
         dryRun: false,
