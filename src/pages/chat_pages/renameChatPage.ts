@@ -24,13 +24,14 @@ export default class RenameChatPage {
         return cookies;
     } 
 
-    async openChatList() {
-        await this.getCookies();
-        await this.base.waitAndClick(this.Elements.sideBarBtn);
-    }
+    // async openChatList() {
+    //     await this.getCookies();
+    //     await this.base.waitAndClick(this.Elements.sideBarBtn);
+    // }
 
     async selectChat() {
         // await this.base.waitAndClick(this.Elements.nameChat);
+        await this.getCookies();
         await this.base.waitAndHover(this.Elements.nameChat);
     }
 

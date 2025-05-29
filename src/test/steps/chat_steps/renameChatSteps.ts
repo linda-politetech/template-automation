@@ -8,14 +8,16 @@ let assert: Assert;
 
 setDefaultTimeout(60 * 1000 * 2);
 
-When ("User clicks on the sidebar to open the chat list", async function () {
-    renameChatPage = new RenameChatPage(fixture.page);
-    assert = new Assert(fixture.page);
-    await renameChatPage.openChatList();
+// When ("User clicks on the sidebar to open the chat list", async function () {
+//     renameChatPage = new RenameChatPage(fixture.page);
+//     assert = new Assert(fixture.page);
+//     await renameChatPage.openChatList();
 
-});
+// });
 
 When ('User selects a chat from the list', async function () {
+    renameChatPage = new RenameChatPage(fixture.page);
+    assert = new Assert(fixture.page);
     await renameChatPage.selectChat();
 });
 

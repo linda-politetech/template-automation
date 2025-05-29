@@ -5,12 +5,14 @@ module.exports = {
             snippetInterface: "async-await"
         },
         paths: [
-            // "src/test/features/renameChat.feature",
-            "src/test/features/chat_features/renameChat.feature",
+            // "src/test/features/common.feature",
+            // "src/test/features/chat_features/renameChat.feature",
+            "src/test/features/project_features/createNewProject.feature",
         ],
         publishQuiet: true,
         dryRun: false,
         require: [
+            "src/test/steps/commonSteps.ts",
             "src/test/steps/**/*.ts",
             "src/hooks/hooks.ts"
         ],
